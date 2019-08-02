@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: 'git@github.com:fei-f/cloud-config.git'
+          uri: 'git@github.com:fei-f/config-repo.git'
           search-paths: 'config/{application}'
           private_key_file: '~/.ssh/id_rsa'
           clone-on-start: true
