@@ -3,9 +3,10 @@ spring:
     config:
       server:
         git:
-          uri: 'https://github.com/bslota/config-repository'
-          clone-on-start: true
+          uri: 'git@github.com:fei-f/cloud-config.git'
           search-paths: 'config/{application}'
+          private_key_file: '~/.ssh/id_rsa'
+          clone-on-start: true
     stream:
       kafka:
         binder:
